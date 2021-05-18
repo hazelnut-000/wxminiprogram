@@ -1,0 +1,43 @@
+/* pages/index/index.wxss */
+
+.indexContainer{
+  display: flex;
+  /* 垂直排列，y为主轴 */
+  flex-direction: column;
+  /* 次轴居中 */
+  align-items: center;
+  height: 100%;
+  background-color: #ff00ff;
+}
+.avatarUrl{
+  /* 做适配 1px=2rps */
+  width: 200rpx;
+  height: 200rpx;
+  /* 圆角 */
+  border-radius: 50%;
+  margin: 150rpx 0;
+}
+button{
+    /* 做适配 1px=2rps */
+    width: 200rpx;
+    height: 200rpx;
+    /* 圆角 */
+    border-radius: 50%;
+    margin: 150rpx 0;
+    font-size: 22rpx;
+    text-align: center;
+    line-height: 200rpx;
+}
+.userName{
+  font-size: 32rpx;
+}
+.goStudy{
+  font-size: 40rpx;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx solid #333;
+  border-radius: 10rpx;
+  margin: 100rpx 0;
+}

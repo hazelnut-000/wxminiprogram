@@ -1,0 +1,15 @@
+<view class="indexContainer">
+<block wx:if="{{!hasUserInfo}}">
+  <button wx:if="{{canIUseGetUserProfile}}" bindtap="handleGetUserProfile"> 获取头像昵称 </button>
+  <button wx:else bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo">获取用户昵称</button>
+</block>
+<block wx:else>
+<!-- 用变量需要用到表达式{{}}比如userInfo -->
+<image class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+<text class="userName">{{userInfo.nickName}}</text>
+</block>
+<!-- 事件绑定catch -->
+<view class="goStudy" catchtap="toLogs">
+<text>hello world</text>
+</view>
+</view>
